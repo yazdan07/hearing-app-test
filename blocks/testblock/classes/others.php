@@ -4,7 +4,7 @@ $log_directory = './img';
 
 $results_array = array();
 
-$db = mysqli_connect("localhost", "root", "", "moodle310"); 
+$db = mysqli_connect("localhost", "root", "root", "moodle310"); 
   
 $res=mysqli_query($db,"select * from mdl_media_others");
 
@@ -12,7 +12,7 @@ while($row=mysqli_fetch_array($res)){
 	$results_array[]=$row['others_image_path'];
 	$results_array[] = $row['others_name'];
 	$results_array[] = $row['others_audio_path'];
-	$results_array[] = $row['others_gif_path'];
+	//	$results_array[] = $row['others_gif_path'];
 }
 
 

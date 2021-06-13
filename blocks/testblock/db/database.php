@@ -2,7 +2,7 @@
 
     $hostname = "localhost";
     $username = "root";
-    $password = "";
+    $password = "root";
 
     try {
         $conn = new PDO("mysql:host=$hostname;dbname=moodle310", $username, $password);

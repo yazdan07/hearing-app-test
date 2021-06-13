@@ -70,26 +70,28 @@ class block_testblock_renderer extends plugin_renderer_base {
 
                 <!doctype html>
                 <html lang="en">
+               
                 
-                    <head>
+                <head>
                    
                      
-                        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-                        
-                        <title>Test</title>
-                        <style>
-                            .container {
-                            max-width: fit;
-                            }
-                        </style>
-                    </head>
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                
+                <title>Test</title>
+                <style>
+                    .container {
+                    max-width: fit;
+                    }
+                </style>
+                </head>
 
                     <body>
 
                         <div class="container">
 
-    
+                        
+                        
 
                         <div class="bs-example">
                                 <div class="accordion" id="accordionExample">
@@ -100,22 +102,24 @@ class block_testblock_renderer extends plugin_renderer_base {
                                             </h2>
                                         </div>
                                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                            <div class="card-body">
-                                                
-                                                <input type="file" id="myFile"  ><br>
-                                                <video controls id="theVideo"></video>
+                                            <div class="card-body" >
+
+                                           
+                                                                               
+                                                <input type="file" id="myFile"><br><br>
+                                                <video controls id="theVideo" width="410" height="250"></video>
                                                                                                                     
                                                 <div class="pt-3 clearboth">
-                                                <label for="fname">To Extract Image from Video:</label>
-                                                <button type="button" class="btn btn-secondary" onclick="capture()">Load Random frame</button>
+                                                <label for="fname">To Extract Image from Video:</label> 
+                                                <button type="button" class="btn btn-secondary" onclick="capture()">Load Random frame</button> <br> <br> 
                     
-                                                <div id="demo"></div>
-                                                <canvas id="canvas" ></canvas>
-                                                </div>                
+                                                <div id="demo" ></div>
+                                                <canvas id="canvas" width="01" height="01"></canvas>
+                                                               
                                                 <div>Suggestions: 
                                                 <div id="prediction"></div>
                                                 </div>
-                                                
+                                                </div>
                                                 
                                                 <button type="button" class="btn btn-info btn-lg" onclick="upload()">Upload</button>
                                                 <div class="modal fade" id="Modalsucess" role="dialog">

@@ -122,7 +122,7 @@ function renderTile(tile) {
                     checkGameEnd(stats);
                 } else {
                     stats.missed++;
-                    setTimeout(function(){console.log('wait')},1500);
+                    setTimeout(function(){console.log('wait')},2100);
                     setTimeout(function() {
                         img.src = TILEBACK;
                         img.alt = TILEBACKALT;
@@ -197,6 +197,7 @@ themesElt.addEventListener("click", function(e) {
           newGame();
           break;
       }
+
 }
 //start a new game when the page loads
 

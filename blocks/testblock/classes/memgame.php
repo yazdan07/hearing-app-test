@@ -4,7 +4,7 @@ $log_directory = './img';
 
 $results_array = array();
 
-$db = mysqli_connect("localhost", "root", "", "moodle310"); 
+$db = mysqli_connect("localhost", "root", "root", "moodle310"); 
   
 $res=mysqli_query($db,"select * from mdl_media_animal");
 

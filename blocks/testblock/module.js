@@ -149,7 +149,7 @@ function capture() {
     var video = document.getElementById("theVideo");
     canvas.width = video.videoWidth;
     canvas.height = video.videoHeight;
-    canvas.getContext("2d").drawImage(video, 0, 0, video.videoWidth, video.videoHeight); 
+    canvas.getContext("2d").drawImage(video, 0, 0,video.videoWidth, video.videoHeight ); 
     capturedimage= canvas.toDataURL('image/png');
     document.getElementById("prediction").innerHTML = "Loading...";
     doPrediction();
@@ -222,7 +222,7 @@ document.getElementById("image_url").onchange = function(e) {
     canvas_img.width = this.width;
     canvas_img.height = this.height;
     var ctx = canvas_img.getContext('2d');
-    ctx.drawImage(this, 0,0);
+    ctx.drawImage(this, 0,0 );
     image_data_upload= canvas_img.toDataURL('image/png');
     document.getElementById("prediction_image").innerHTML = "Loading...";
     doPrediction_img();
